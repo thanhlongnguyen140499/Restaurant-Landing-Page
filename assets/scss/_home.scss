@@ -133,7 +133,7 @@
         }
 
         .wayu-steak {
-            width: 100%;
+            width: 80%;
             // max-width: 1000px;
             animation: moveUpandDown 4s linear infinite;
             position: relative;
@@ -148,6 +148,80 @@
 
             50% {
                 bottom: 80px;
+            }
+        }
+    }
+}
+
+#information {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100vh;
+    .restaurant-image {
+        overflow: hidden;
+        img {
+            width: 100%;
+            // max-height: 500px;
+            // object-fit: cover;
+            // object-position: 0 0;
+        }
+    }
+
+    .restaurant-info {
+        padding: 100px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .paragraphs {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 20px;
+            line-height: 1.7;
+            color: #525e66;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .about-link {
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            span{
+                margin-right: 20px;
+            }
+            .circle-right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ed4852+0,9c1b24+100 */
+                background: #ed4852;
+                /* Old browsers */
+                background: -moz-radial-gradient(center, ellipse cover, #ed4852 0%, #9c1b24 100%);
+                /* FF3.6-15 */
+                background: -webkit-radial-gradient(center, ellipse cover, #ed4852 0%, #9c1b24 100%);
+                /* Chrome10-25,Safari5.1-6 */
+                background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
+                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed4852', endColorstr='#9c1b24', GradientType=1);
+
+                /* IE6-9 fallback on horizontal gradient */
+                .fa-chevron-right {
+                    color: white;
+                    font-size: 1.3rem;
+                }
             }
         }
     }
