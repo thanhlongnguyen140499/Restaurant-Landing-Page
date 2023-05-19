@@ -91,6 +91,62 @@
     }
 
     .welcome-jumbo {
-        background: red;
+        max-width: calc(100wh - 350px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2dcded+31,2fe8fc+66,2fe8fc+100,7db9e8+100,2fe8fc+101 */
+        background: #1e5799;
+        /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #1e5799 0%, #2dcded 31%, #2fe8fc 66%, #2fe8fc 100%, #7db9e8 100%, #2fe8fc 101%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #1e5799 0%, #2dcded 31%, #2fe8fc 66%, #2fe8fc 100%, #7db9e8 100%, #2fe8fc 101%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #1e5799 0%, #2dcded 31%, #2fe8fc 66%, #2fe8fc 100%, #7db9e8 100%, #2fe8fc 101%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#2fe8fc', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+        overflow: hidden;
+        padding: 100px;
+
+        .status {
+            display: inline-block;
+            padding: 10px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: white;
+            background: black;
+            border-radius: 5px;
+            align-self: flex-start;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            align-self: flex-start;
+            color: white;
+            margin-bottom: 100px;
+        }
+
+        .wayu-steak {
+            width: 100%;
+            max-width: 1000px;
+            animation: moveUpandDown 4s linear infinite;
+            position: relative;
+        }
+
+        @keyframes moveUpandDown {
+
+            0%,
+            100% {
+                bottom: 0;
+            }
+
+            50% {
+                bottom: 80px;
+            }
+        }
     }
 }
